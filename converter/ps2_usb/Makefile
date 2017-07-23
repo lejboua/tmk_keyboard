@@ -33,7 +33,7 @@ CONFIG_H ?= config.h
 
 
 # MCU name
-MCU ?= atmega32u2
+MCU ?= atmega32u4
 
 # Processor frequency.
 #     This will define a symbol, F_CPU, in all source code files equal to the
@@ -93,14 +93,14 @@ MOUSEKEY_ENABLE ?= no	# Mouse keys(+4700)
 EXTRAKEY_ENABLE ?= yes	# Audio control and System control(+450)
 CONSOLE_ENABLE ?= yes	# Console for debug(+400)
 COMMAND_ENABLE ?= yes    # Commands for debug and configuration
-NKRO_ENABLE ?= yes	# USB Nkey Rollover
+NKRO_ENABLE ?= no	# USB Nkey Rollover
 
 
 # PS/2 Options
 #
-#PS2_USE_USART ?= yes	# uses hardware USART engine for PS/2 signal receive(recomened)
+# PS2_USE_USART ?= yes	# uses hardware USART engine for PS/2 signal receive(recomened)
 PS2_USE_INT ?= yes	# uses external interrupt for falling edge of PS/2 clock pin
-#PS2_USE_BUSYWAIT ?= yes	# uses primitive reference code
+# PS2_USE_BUSYWAIT ?= yes	# uses primitive reference code
 
 
 # Optimize size but this may cause error "relocation truncated to fit"
