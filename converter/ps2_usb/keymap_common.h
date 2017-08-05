@@ -160,6 +160,30 @@ KEYMAP_FULL( \
     K14,K9F,K11,MHEN,   K29,          HENK,KANA,K91,KA7,KAF,K94, KEB,KF2,KF4,  PWR,K70,K71,PEQL \
 )
 
+/* Lejboua Model M layout,
+ * Compared with Model M ANSI Layout, it adds:
+ * - split Backspace into 2 keys (JPY and K66 = Backspace)
+ * - split RShift into two keys (RO and K59 = RShift)
+ * - split LShift into two keys (K12 = LShift and NUBS)
+ */
+#define KEYMAP_MODELM( \
+    K76,K05,K06,K04,K0C,K03,K0B,K83,K0A,K01,K09,K78,K07,         KFC,K7E,KFE,                   \
+    K0E,K16,K1E,K26,K25,K2E,K36,K3D,K3E,K46,K45,K4E,K55,JPY,K66, KF0,KEC,KFD,  K77,KCA,K7C,K7B, \
+    K0D,K15,K1D,K24,K2D,K2C,K35,K3C,K43,K44,K4D,K54,K5B,    K5D, KF1,KE9,KFA,  K6C,K75,K7D,     \
+    K58,K1C,K1B,K23,K2B,K34,K33,K3B,K42,K4B,K4C,K52,        K5A,               K6B,K73,K74,K79, \
+    K12,NUBS,K1A,K22,K21,K2A,K32,K31,K3A,K41,K49,K4A,   RO, K59,     KF5,      K69,K72,K7A,     \
+    K14,    K11,            K29,                K91,        K94, KEB,KF2,KF4,  K70,    K71,KDA  \
+) \
+KEYMAP_FULL( \
+        F13,F14,F15,F16,F17,F18,F19,F20,F21,F22,F23,F24,                                        \
+    K76,K05,K06,K04,K0C,K03,K0B,K83,K0A,K01,K09,K78,K07,          KFC,K7E,KFE,  VOLD,VOLU,MUTE,  \
+    K0E,K16,K1E,K26,K25,K2E,K36,K3D,K3E,K46,K45,K4E,K55,JPY, K66, KF0,KEC,KFD,  K77,KCA,K7C,K7B, \
+    K0D,K15,K1D,K24,K2D,K2C,K35,K3C,K43,K44,K4D,K54,K5B,     K5D, KF1,KE9,KFA,  K6C,K75,K7D,K79, \
+    K58,K1C,K1B,K23,K2B,K34,K33,K3B,K42,K4B,K4C,K52,         K5A,               K6B,K73,K74,PCMM,\
+    K12,NUBS,K1A,K22,K21,K2A,K32,K31,K3A,K41,K49,K4A,   RO,  K59,     KF5,      K69,K72,K7A,KDA, \
+    K14,LGUI,K11,MHEN,    K29,        HENK,KANA,K91,RGUI,APP,K94, KEB,KF2,KF4,  PWR,K70,K71,PEQL \
+)
+
 /* ISO layout */
 #define KEYMAP_ISO( \
     K76,K05,K06,K04,K0C,K03,K0B,K83,K0A,K01,K09,K78,K07,     KFC,K7E,KFE,                   \
